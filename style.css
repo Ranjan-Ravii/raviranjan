@@ -1,0 +1,464 @@
+ /* navigation bar css */
+
+ nav {
+     height: 60px;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1000;
+     background-color: rgba(50, 65, 88, 0.97);
+ }
+
+ /* .navigation {
+     height: 100px;
+     width: 100%;
+     position: fixed;
+     top: 0;
+ } */
+
+ .navigationBar {
+     height: 60px;
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    padding: 0 20px;
+
+ }
+
+ .logo {
+     width: 50px;
+     cursor: pointer;
+ }
+
+ .navbtn {
+     height: 50px;
+     width: 90%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-grow: 1;
+ }
+
+ .navbtn div {
+     color: white;
+     margin: 0 20px;
+     padding: 10px;
+     cursor: pointer;
+ }
+
+ .sidebar {
+     position: fixed;
+     top: 0;
+     right: 0;
+     height: 100vh;
+     width: 200px;
+     background-color: rgba(50, 65, 88, 0.97);
+     backdrop-filter: blur(12px);
+     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+     list-style: none;
+     display: none;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     z-index: 1001;
+
+ }
+
+ .sidebar li {
+     width: 100%;
+     color: white;
+     cursor: pointer;
+
+ }
+
+ .sidebarBtn {
+     margin: 15px;
+     padding: 10px;
+
+
+ }
+
+ .sidebar li:hover {
+     background-color: rgba(73, 96, 129, 0.97);
+
+ }
+
+ .sidebar li img {
+     width: 20%;
+     height: 90%;
+ }
+
+ .menu-button {
+     display: none;
+     cursor: pointer;
+ }
+
+ @media(max-width: 800px) {
+     .hideOnMobile {
+         display: none;
+     }
+
+     .menu-button {
+         display: block;
+
+     }
+ }
+
+ @media(max-width: 400px) {
+     .sidebar {
+         width: 100%;
+     }
+ }
+
+
+
+ /* CSS for front page view */
+
+
+ .main {
+     height: 900px;
+     width: 100%;
+     background-color: rgba(50, 65, 88, 1);
+     position: relative;
+     top: 60px;
+     left: 0px;
+     background-image: url("laptop_bg_img.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-blend-mode: overlay;
+     background-attachment: fixed;
+
+
+ }
+
+ .name {
+     color: aliceblue;
+     font-size: 65px;
+     position: absolute;
+     top: 80px;
+     left: 15%;
+     letter-spacing: 5px;
+ }
+
+
+ .desgnation {
+     color: aliceblue;
+     position: absolute;
+     top: 400px;
+     left: 15%;
+     font-size: 24px;
+     letter-spacing: 5px;
+ }
+
+
+ @media(max-width: 800px) {
+     .main {
+         width: 100%;
+         background-size: cover;
+     }
+
+     .menu-button {
+         display: block;
+
+     }
+ }
+
+ @media(max-width: 400px) {
+     .sidebar {
+         width: 100%;
+     }
+ }
+
+
+
+ /* css for professional */
+
+
+ .secBox {
+     height: 900px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     top: 0px;
+     left: 0px;
+     background-color: rgb(36, 42, 53);
+     background-image: url("magazine_bg5.jpg");
+     background-size: cover;
+     background-blend-mode: overlay;
+     background-attachment: fixed;
+
+
+ }
+
+ .profesion {
+     height: 450px;
+     width: 60%;
+     position: absolute;
+     top: -225px;
+     background-color: #333B50;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+
+ .logo2 {
+     height: 100px;
+     width: 100px;
+ }
+
+ .about {
+     width: 70%;
+     color: aliceblue;
+     font-size: 16px;
+     text-align: center;
+ }
+
+ .resume {
+     height: 48px;
+     width: 220px;
+     color: white;
+     border: 2px solid rgb(83, 204, 83);
+     background-color: #333B50;
+     cursor: pointer;
+ }
+
+ #profesion {
+     position: absolute;
+     top: 300px;
+     width: 60%;
+     height: 400px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .professional {
+     color: white;
+     font-size: 36px;
+     margin: 5px;
+     padding: 5px;
+ }
+
+ #experience {
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .skill,
+ .experience,
+ .education {
+     font-size: 15px;
+     color: white;
+     margin: 10px;
+     padding: 5px;
+     letter-spacing: 1px;
+     cursor: pointer;
+ }
+
+ .textBox {
+     border: 1px solid white;
+     height: 300px;
+     width: 100%;
+     margin: 5px;
+     padding: 5px;
+ }
+
+
+ /* css for projects */
+ #project {
+     height: 1300px;
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     position: relative;
+     top: 0;
+     left: 0;
+     right: 0;
+     background-image: url('mountain.jpg');
+     background-size: cover;
+     background-color: rgba(36, 42, 53, 0.867);
+     background-blend-mode: overlay;
+     background-attachment: fixed;
+
+ }
+
+ .project-heading {
+     position: relative;
+     top: 150px;
+     color: white;
+     font-size: 36px;
+     margin: 5px;
+     padding: 5px;
+ }
+
+ .project_box {
+     position: relative;
+     top: 150px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     height: auto;
+     width: 90%;
+     /* border: 1px solid green; */
+ }
+
+ .project {
+     height: 200px;
+     width: 300px;
+     border: 1px solid white;
+     margin: 10px;
+     padding: 10px;
+     cursor: pointer;
+ }
+
+ .projectBtn {
+     position: relative;
+     top: 150px;
+     margin-top: 20px;
+     height: 40px;
+     width: 150px;
+     font-size: 16px;
+     cursor: pointer;
+ }
+
+
+ /* CSS for contact */
+
+ #contactBox {
+     height: 400px;
+     width: 100%;
+     position: relative;
+     top: 0;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(36, 42, 53, 0.645);
+     background-image: url('contact-me2.jpg');
+     background-size: cover;
+     background-position: center;
+     background-blend-mode: overlay;
+     background-attachment: fixed;
+
+ }
+
+
+ .innerContactBox {
+     height: auto;
+     width: auto;
+     position: absolute;
+     top: -200px;
+     flex-wrap: wrap;
+     background-color: #333B50;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .innerContactBox1,
+ .innerContactBox2 {
+     height: auto;
+     width: 300px;
+     /* border: 1px solid green; */
+     margin: 5px;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     margin: 10px;
+     padding: 10px;
+ }
+
+ .innerContactBox1>h2 {
+     font-size: 36px;
+     color: white;
+ }
+
+ .innerContactBox1>p {
+     color: white;
+     text-decoration: none;
+ }
+
+ .innerContactBox1>a {
+     color: white;
+     margin-top: 15px;
+ }
+
+ .social-media {
+     width: 140px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     margin-top: 5px;
+ }
+
+ .social-media-logo {
+     height: 20px;
+     width: 20px;
+     margin: 10px;
+
+ }
+
+ .contact-form {
+     /* background-color: white; */
+     padding: 10px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: auto;
+ }
+
+ .contact-form input,
+ .contact-form textarea,
+ .contact-form button {
+     width: 100%;
+     padding: 10px;
+     margin: 10px 0;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+ }
+
+ .contact-form button {
+     background-color: #28a745;
+     color: white;
+     border: none;
+     cursor: pointer;
+ }
+
+ .contact-form button:hover {
+     background-color: #218838;
+ }
+
+ .footer {
+     height: 100px;
+     width: 100%;
+     position: relative;
+     top: 0px;
+     left: 0;
+     background-color: #333B50;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .footerLogo {
+     height: 30px;
+     width: 30px;
+ }
+
+ .footerline {
+     margin: 20px;
+     color: white;
+ }
